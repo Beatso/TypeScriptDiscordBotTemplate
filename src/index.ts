@@ -31,7 +31,14 @@ client.setProvider(
 ).catch(console.error)
 
 client.on('ready', () => {
-	console.log('Bot running!')
+
+	console.log('Bot running!');
+
+	(function startUpdatingStatus () {
+		client.user?.setActivity(`${client.guilds.cache.size} servers`, { type: 'WATCHING' }).catch(console.error) // update status
+		setTimeout(() => startUpdatingStatus(), 3600000) // run again in an hour
+	})()
+	
 })
 
 client.login(process.env.bottoken)
