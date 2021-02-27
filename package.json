@@ -1,0 +1,35 @@
+{
+  "name": "typescript-discord-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.14.31",
+    "@types/sqlite3": "^3.1.7",
+    "discord.js": "^12.5.1",
+    "discord.js-commando": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "path": "^0.12.7",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.2"
+  }
+}
