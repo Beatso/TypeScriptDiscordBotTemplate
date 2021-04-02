@@ -29,7 +29,7 @@
     "discord.js-commando": "^0.12.2",
     "dotenv": "^8.2.0",
     "path": "^0.12.7",
-    "sqlite": "^4.0.19",
+    "sqlite": "^4.0.21",
     "sqlite3": "^5.0.2"
   }
 }
