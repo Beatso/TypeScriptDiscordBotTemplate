@@ -25,7 +25,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/node": "^14.14.31",
     "@types/sqlite3": "^3.1.7",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.2",
     "discord.js-commando": "^0.12.2",
     "dotenv": "^8.2.0",
     "path": "^0.12.7",
